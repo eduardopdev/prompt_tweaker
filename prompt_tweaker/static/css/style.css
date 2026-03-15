@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    height: 100vh; /* DEFINE A ALTURA DO ELEMENTO COMO 100% DA ALTURA DA viewport (janela do browser)*/
+    display: flex;
+    justify-content: center; /* SÓ FUNCIONA COM display: flex */
+    align-items: center; /* SÓ FUNCIONA COM display: flex */
+    background: #e5e5e5;
+    font-family: Arial, sans-serif;
+}
+
+#login-form {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    width: 300px;
+    box-shadow: 0 10px 25px rgba(193, 193, 193, 0.2);
+    gap: 15px;
+}
+
+#login-form h1 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #333;
+    font-size: 28px;
+}
+
+#login-form input {
+    padding: 12px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+#login-form input:focus {
+    outline: none;
+    border-color: #878dae;
+}
+
+#login-form button {
+    padding: 12px;
+    background: #6a6a6a;
+    color: rgb(239, 239, 239);
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#login-form button:hover {
+    background: #a4a4a4;
+}
