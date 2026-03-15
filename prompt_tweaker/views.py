@@ -54,4 +54,4 @@ def message_claude(request):
     message = client.messages.create(**request_kwargs)
     
     llm_response = message.content[0].text
-    return JsonResponse({"answer": message})
+    return JsonResponse({"answer": llm_response})
